@@ -1,0 +1,5 @@
+bin_PROGRAMS = kitty
+
+kitty_SOURCES = kitty.c
+kitty_CFLAGS = $(GTK3_CFLAGS) $(WEBKIT2GTK3_CFLAGS)
+kitty_LDADD = $(GTK3_LIBS) $(WEBKIT2GTK3_LIBS)
